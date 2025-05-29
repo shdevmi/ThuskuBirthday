@@ -308,7 +308,41 @@
 						</div>
 					</section>
 					
+<section class="wrapper style1 align-center">
+      <div class="inner">
+        <h2>A Little Extra</h2>
+        <ul class="actions stacked">
+          <li><a href="#" class="button big wide" onclick="toggleLetter()">A Letter for You</a></li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Floating Letter Modal -->
+    <div id="letterModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); backdrop-filter:blur(5px); z-index:9999; overflow:auto;">
+      <div style="background:#fffaf6; color:#3a3a3a; max-width:700px; margin:5% auto; padding:2rem; border-radius:12px; font-family:'Georgia', serif; line-height:1.8; font-size:1.1rem; box-shadow:0 10px 30px rgba(0,0,0,0.2);">
+        <h2 style="text-align:center; font-weight:400;">for srasta</h2>
+        <p>
+          hi srasta,<br><br>
+          i don’t really know where to start. maybe i just missed you a little more today than usual. maybe i just wanted to put a small piece of how i feel somewhere that feels real.<br><br>
+          it’s been two years. wild, right? time keeps moving.<br><br>
+          you still come up in the quiet moments. not loudly. not painfully. just... gently. aba maybe when i am happy or when i accomplish something and i dont have you to share it with, or when someone laughs in a way that sounds like you used to...<br><br>
+          i don’t want anything. i’m not trying to change the story. i just wanted to say: you really mattered to me. deeply. beautifully. and a huge part of me has been always carrying you around regardless of if im very happy or deep down, i still read your letters...<br><br>
+          i hope you’re okay. i hope you’re laughing often. and i hope you still walk like the world’s your own little movie...<br><br>
+          every time i discover new songs on spotify, i remember how much i loved sharing them with you.<br>
+          every time i think of kathmandu and miss you, i make spinach and feta ravioli and listen to prateek kuhad (seriously—can you believe it? prateek kuhad and me haha).<br>
+          it's funny to me how now i’m a crazy matcha drinker even though we never drank it together. somehow, when i do, it feels like i’m drinking it with you.<br>
+          every time i buy something and mess up the size, i still think of how thusking you would be when i got your shoe size wrong.<br>
+          every time i’ve failed, i think of how you believed in me. the more i grow, the more i realize how proud i am of the person you are.<br>
+          and every time i’m at my lowest, i still ask myself—where did potey come from?<br><br>
+          this little corner of the internet is just my way of saying: thank you. for being you. for being part of my story.<br><br>
+          – shashwat
+        </p>
+        <p style="text-align:center; font-size:0.9em; color:#888;">this won't stay forever. just like us. but while it's here, it’s for you.</p>
+        <div style="text-align:center; margin-top:2rem;">
+          <button onclick="toggleLetter()" style="padding:0.6em 1.5em; border:none; background:#e4d1c3; color:#3a3a3a; font-family:'Georgia', serif; font-size:1rem; border-radius:6px; cursor:pointer;">close</button>
+        </div>
+      </div>
+    </div>
 				
 
 				<!-- Footer -->
@@ -329,6 +363,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+    function toggleLetter() {
+      const modal = document.getElementById('letterModal');
+      const body = document.body;
+      if (modal.style.display === 'block') {
+        modal.style.display = 'none';
+        body.style.overflow = 'auto';
+      } else {
+        modal.style.display = 'block';
+        body.style.overflow = 'hidden';
+      }
+    }
+  </script>
 		
 	
 
